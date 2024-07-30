@@ -18,7 +18,7 @@ gameWindow=pygame.display.set_mode((screen_w,screen_h))
 clock=pygame.time.Clock()
 caption=pygame.display.set_caption("Py-Snake")
 
-#creating score folder if not created and reading its data
+#creating score file if not created and reading its data
 if not (os.path.exists("score.json")):
     with open("score.json","w") as f:
         params={"easy":0,"hard":0}
